@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manali Tour Package - ReserveMyTrip</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- ✅ NAVBAR (same as homepage) -->
+    <header class="bg-white shadow">
+      <div
+        class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="index.html" class="text-xl font-bold text-blue-600"
+          >ReserveMyTrip</a
+        >
+        <nav>
+          <ul class="flex space-x-6 font-medium text-sm">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li>
+              <a href="index.html#packages" class="hover:text-blue-500"
+                >Packages</a
+              >
+            </li>
+            <li>
+              <a href="index.html#about" class="hover:text-blue-500">About</a>
+            </li>
+            <li>
+              <a href="index.html#contact" class="hover:text-blue-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ✅ HERO SECTION with working overlay -->
+    <section
+      class="relative h-screen bg-cover bg-center flex items-center justify-center text-white"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1712388430474-ace0c16051e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <!-- ✅ Overlay with working opacity -->
+      <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+      <!-- ✅ Content on top of overlay -->
+      <div class="relative z-10 text-center max-w-2xl px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Explore Manali with Us
+        </h1>
+        <p class="text-lg md:text-xl mb-6">
+          Snow, rivers, mountains, and unforgettable memories—everything starts
+          here.
+        </p>
+
+        <a
+          href="https://wa.me/917790909989?text=I%20want%20Manali%20Tour%20details"
+          target="_blank"
+          class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition duration-300"
+        >
+          Get Free Quote on WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- ✅ WHY VISIT MANALI SECTION -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+          Why Visit Manali?
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Manali is a dream destination nestled in the lap of the Himalayas.
+          From snow-capped peaks to cozy cafes, from thrilling adventures to
+          peaceful valleys—Manali offers something for every traveler.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <!-- ✅ Gallery Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1656833111546-07d98abab448?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="rounded-lg shadow-lg"
+              alt="Snow"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1624193931159-eb1b0817c2d6?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="rounded-lg shadow-lg"
+              alt="River"
+            />
+            <img
+              src="https://images.pexels.com/photos/5205097/pexels-photo-5205097.jpeg?_gl=1*pgawtu*_ga*MTc1NTA5NDA3Ny4xNzUyNTE2MDg4*_ga_8JE65Q40S6*czE3NTI1MjIxMjgkbzIkZzEkdDE3NTI1MjIxNDEkajQ3JGwwJGgw"
+              class="rounded-lg shadow-lg"
+              alt="Mountain"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1637682739788-cff4d23e842a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="rounded-lg shadow-lg"
+              alt="Forest"
+            />
+          </div>
+
+          <!-- ✅ Feature Highlights -->
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-1">❄️ Snow Adventures</h3>
+              <p class="text-gray-600 text-sm">
+                Enjoy skiing, snowboarding, and snowball fights in Solang
+                Valley.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-1">🌲 Scenic Views</h3>
+              <p class="text-gray-600 text-sm">
+                Breathtaking mountain backdrops and lush greenery everywhere you
+                look.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-1">🛶 River & Camping</h3>
+              <p class="text-gray-600 text-sm">
+                Camp by the Beas River and enjoy riverside bonfires under the
+                stars.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-1">💆‍♂️ Relax & Recharge</h3>
+              <p class="text-gray-600 text-sm">
+                Unwind in peaceful cafes, rejuvenate with spa therapy, or just
+                read with a view.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ MANALI PACKAGES -->
+    <section class="bg-gray-50 py-12 px-4" id="packages">
+      <h2 class="text-3xl font-bold text-center mb-10">Manali Packages</h2>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-semibold text-xl mb-2">2 Nights / 3 Days</h3>
+          <p class="text-gray-600 mb-2">Volvo + Hotel + Sightseeing</p>
+          <p class="text-green-600 text-2xl font-bold mb-4">₹6,999/-</p>
+          <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded"
+            >Enquire</a
+          >
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-semibold text-xl mb-2">3 Nights / 4 Days</h3>
+          <p class="text-gray-600 mb-2">Private cab + Deluxe Stay</p>
+          <p class="text-green-600 text-2xl font-bold mb-4">₹9,499/-</p>
+          <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded"
+            >Enquire</a
+          >
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-semibold text-xl mb-2">4 Nights / 5 Days</h3>
+          <p class="text-gray-600 mb-2">Full Adventure Pack + Meals</p>
+          <p class="text-green-600 text-2xl font-bold mb-4">₹12,999/-</p>
+          <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded"
+            >Enquire</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ FORM SECTION -->
+    <section id="form" class="max-w-4xl mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">
+        Get Free Quote on WhatsApp
+      </h2>
+      <form
+        onsubmit="submitToWhatsApp(event)"
+        class="bg-white p-6 rounded shadow space-y-4"
+      >
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          class="w-full border px-3 py-2 rounded"
+          required
+        />
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Phone Number"
+          class="w-full border px-3 py-2 rounded"
+          required
+        />
+        <input
+          type="text"
+          id="dates"
+          placeholder="Travel Dates"
+          class="w-full border px-3 py-2 rounded"
+        />
+        <input
+          type="number"
+          id="people"
+          placeholder="No. of People"
+          class="w-full border px-3 py-2 rounded"
+        />
+        <select id="type" class="w-full border px-3 py-2 rounded">
+          <option value="">Type of Trip</option>
+          <option>Solo</option>
+          <option>Couple</option>
+          <option>Group</option>
+          <option>Family</option>
+        </select>
+        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">
+          Submit on WhatsApp
+        </button>
+      </form>
+    </section>
+
+    <!-- ✅ UPDATED FOOTER WITH WHATSAPP FLOAT -->
+    <footer class="bg-gray-900 text-gray-300 py-10" id="footer">
+      <div class="max-w-[1200px] mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-3">
+            Reserve<span class="text-blue-500">MyTrip</span>
+          </h3>
+          <p class="text-sm">
+            Trusted travel partner for domestic and international tours.
+            Personalized service. Transparent pricing. 24/7 support.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li>
+              <a href="#packages" class="hover:text-white">Tour Packages</a>
+            </li>
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#contact" class="hover:text-white">Contact</a></li>
+            <li>
+              <a href="https://wa.me/917790909989" class="hover:text-white"
+                >WhatsApp</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-3">Legal & Support</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+            <li>
+              <a href="#" class="hover:text-white">Cancellation & Refund</a>
+            </li>
+            <li>
+              <a href="mailto:support@reservemytrip.in" class="hover:text-white"
+                >support@reservemytrip.in</a
+              >
+            </li>
+          </ul>
+          <div class="text-sm text-gray-400 mt-6 space-y-1">
+            <p>📍 Jaipur, Rajasthan, India</p>
+            <p>📧 support@reservemytrip.in</p>
+            <p>🚨 Emergency: shubham@reservemytrip.in</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-gray-500 mt-10">
+        © 2025 Reservemytrip · A Unit of Mayank Enterprises · All rights
+        reserved.
+      </div>
+    </footer>
+
+    <div class="fixed bottom-5 right-5 z-50 group">
+      <a
+        href="https://wa.me/917790909989"
+        target="_blank"
+        class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 2.5A13.43 13.43 0 002.5 16a13.3 13.3 0 001.8 6.6L2 30l7.6-2a13.5 13.5 0 006.4 1.6A13.5 13.5 0 0016 2.5zm0 24.9a11.1 11.1 0 01-5.6-1.5l-.4-.2-4.5 1.2 1.2-4.4-.2-.4A11.07 11.07 0 1116 27.4zm6-8c-.3-.2-1.7-.8-1.9-.9s-.4-.1-.6.2-.7.9-.9 1.1-.3.2-.6.1a9.1 9.1 0 01-2.7-1.7 9.8 9.8 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5c.1-.2.2-.4.3-.6s0-.4 0-.6a3.6 3.6 0 00-.8-1.2c-.2-.2-.4-.3-.6-.3H12a1.1 1.1 0 00-.8.4c-.3.3-1.1 1-1.1 2.5s1.2 2.9 1.4 3.1a13.9 13.9 0 005.8 4c.8.3 1.5.5 2 .6.9.1 1.7.1 2.3.1.7 0 2.2-.8 2.4-1.6s.3-1.5.2-1.6c-.1-.1-.3-.2-.6-.3z"
+          />
+        </svg>
+      </a>
+      <div
+        class="absolute right-14 top-1/2 -translate-y-1/2 bg-black text-white text-sm px-3 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+      >
+        Chat with us
+      </div>
+    </div>
+
+    <!-- ✅ WHATSAPP FORM SCRIPT -->
+    <script>
+      function submitToWhatsApp(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const dates = document.getElementById("dates").value;
+        const people = document.getElementById("people").value;
+        const type = document.getElementById("type").value;
+
+        const message = `Hi, I want a quote for Manali:\n\nName: ${name}\nPhone: ${phone}\nDates: ${dates}\nPeople: ${people}\nType: ${type}`;
+        const url = `https://wa.me/917790909989?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
