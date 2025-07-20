@@ -1,3 +1,107 @@
 html {
   scroll-behavior: smooth;
 }
+
+.filter-box-title{
+  
+}
+
+.package-filter {
+  background: #f9f9f9;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.filter-box {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.filter-box h2 {
+  margin-bottom: 0.25rem;
+}
+
+.filter-box p {
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.input-box i {
+  margin-right: 0.5rem;
+  color: #007bff;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.row .half {
+  flex: 1 1 48%;
+}
+
+.filter-dropdowns {
+  margin-top: 1rem;
+}
+
+.dropdowns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.dropdowns select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 120px;
+  flex: 1;
+}
+
+.search-btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #0056b3;
+}
+
