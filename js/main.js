@@ -97,3 +97,78 @@ document.addEventListener("keydown", function (e) {
     document.getElementById("search-popup").classList.add("hidden");
   }
 });
+
+// Search functionality for filter section
+document.addEventListener("DOMContentLoaded", () => {
+  const searchBtn = document.querySelector("#search-btn");
+  
+  if (searchBtn) {
+    searchBtn.addEventListener("click", () => {
+      // Get all filter values
+      const source = document.querySelector("#source")?.value || "";
+      const destination = document.querySelector("#destination")?.value || "";
+      const date = document.querySelector("#date")?.value || "";
+      const guests = document.querySelector("#guests-input")?.value || "";
+      const budget = document.querySelector("#budget-input")?.value || "";
+      const duration = document.querySelector("#duration-select")?.value || "";
+      const hotel = document.querySelector("#hotel")?.value || "";
+      const flight = document.querySelector("#flight")?.value || "";
+
+      // Build URL parameters
+      const params = new URLSearchParams();
+      
+      if (source) params.append('source', source);
+      if (destination) params.append('destination', destination);
+      if (date) params.append('date', date);
+      if (guests) params.append('guests', guests);
+      if (budget) params.append('budget', budget);
+      if (duration) params.append('duration', duration);
+      if (hotel) params.append('hotel', hotel);
+      if (flight) params.append('flight', flight);
+
+      console.log('Search parameters:', {
+        source, destination, date, guests, budget, duration, hotel, flight
+      });
+
+      // Redirect to packages page with search parameters
+      const packagesURL = `packages.html?${params.toString()}`;
+      console.log('Redirecting to:', packagesURL);
+      window.location.href = packagesURL;
+    });
+  }
+});
+
+// Quick search function
+function quickSearch() {
+  const searchInput = document.getElementById('quick-search-input');
+  const destination = searchInput.value.trim();
+  
+  if (destination) {
+    // Redirect to packages page with destination search
+    const packagesURL = `packages.html?destination=${encodeURIComponent(destination)}`;
+    console.log('Quick search for:', destination);
+    window.location.href = packagesURL;
+  } else {
+    // If no destination entered, show all packages
+    window.location.href = 'packages.html';
+  }
+}
+
+// Quick search for specific destination
+function quickSearchDestination(destination) {
+  const packagesURL = `packages.html?destination=${encodeURIComponent(destination)}`;
+  console.log('Quick search for destination:', destination);
+  window.location.href = packagesURL;
+}
+
+// Allow Enter key to trigger quick search
+document.addEventListener('DOMContentLoaded', () => {
+  const quickSearchInput = document.getElementById('quick-search-input');
+  if (quickSearchInput) {
+    quickSearchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        quickSearch();
+      }
+    });
+  }
+});

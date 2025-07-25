@@ -1,0 +1,314 @@
+[
+  {
+    "destination": "Goa",
+    "price": 10000,
+    "duration": "3 Days",
+    "hotel": "3 Star",
+    "flight": "Yes",
+    "description": "Beach paradise with nightlife and Portuguese heritage"
+  },
+  {
+    "destination": "Manali",
+    "price": 8500,
+    "duration": "4 Days",
+    "hotel": "2 Star",
+    "flight": "No",
+    "description": "Mountain retreat with snow activities and adventure sports"
+  },
+  {
+    "destination": "Thailand",
+    "price": 22000,
+    "duration": "5 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Tropical paradise with temples, beaches and vibrant culture"
+  },
+  {
+    "destination": "Dubai",
+    "price": 40000,
+    "duration": "6 Days",
+    "hotel": "5 Star",
+    "flight": "Yes",
+    "description": "Luxury shopping, futuristic architecture and desert adventures"
+  },
+  {
+    "destination": "Kerala",
+    "price": 12000,
+    "duration": "5 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Backwaters, Ayurveda and lush green landscapes"
+  },
+  {
+    "destination": "Shimla",
+    "price": 9000,
+    "duration": "3 Days",
+    "hotel": "2 Star",
+    "flight": "No",
+    "description": "Queen of hills with colonial charm and scenic beauty"
+  },
+  {
+    "destination": "Bali",
+    "price": 30000,
+    "duration": "6 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Island of gods with temples, beaches and rice terraces"
+  },
+  {
+    "destination": "Andaman",
+    "price": 20000,
+    "duration": "5 Days",
+    "hotel": "3 Star",
+    "flight": "Yes",
+    "description": "Crystal clear waters, coral reefs and pristine beaches"
+  },
+  {
+    "destination": "Rajasthan",
+    "price": 15000,
+    "duration": "4 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Royal heritage, forts, palaces and desert culture"
+  },
+  {
+    "destination": "Kashmir",
+    "price": 18000,
+    "duration": "5 Days",
+    "hotel": "4 Star",
+    "flight": "No",
+    "description": "Paradise on earth with Dal Lake and mountain vistas"
+  },
+  {
+    "destination": "Ladakh",
+    "price": 25000,
+    "duration": "7 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "High altitude adventure with monasteries and landscapes"
+  },
+  {
+    "destination": "Singapore",
+    "price": 45000,
+    "duration": "5 Days",
+    "hotel": "5 Star",
+    "flight": "Yes",
+    "description": "Modern city-state with gardens, shopping and attractions"
+  },
+  {
+    "destination": "Maldives",
+    "price": 50000,
+    "duration": "6 Days",
+    "hotel": "5 Star",
+    "flight": "Yes",
+    "description": "Overwater bungalows and turquoise lagoons"
+  },
+  {
+    "destination": "Jaipur",
+    "price": 8000,
+    "duration": "3 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Pink city with palaces, forts and rich culture"
+  },
+  {
+    "destination": "Agra",
+    "price": 7500,
+    "duration": "2 Days",
+    "hotel": "2 Star",
+    "flight": "No",
+    "description": "Home to the iconic Taj Mahal and Mughal heritage"
+  },
+  {
+    "destination": "Varanasi",
+    "price": 8500,
+    "duration": "3 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Spiritual capital with ghats and ancient temples"
+  },
+  {
+    "destination": "Nepal",
+    "price": 18000,
+    "duration": "5 Days",
+    "hotel": "3 Star",
+    "flight": "Yes",
+    "description": "Himalayan kingdom with trekking and cultural heritage"
+  },
+  {
+    "destination": "Sri Lanka",
+    "price": 23000,
+    "duration": "5 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Tea gardens, beaches and ancient Buddhist sites"
+  },
+  {
+    "destination": "Coorg",
+    "price": 9500,
+    "duration": "3 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Scotland of India with coffee plantations and hills"
+  },
+  {
+    "destination": "Ooty",
+    "price": 10000,
+    "duration": "3 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Queen of hill stations with tea gardens and toy train"
+  },
+  {
+    "destination": "Darjeeling",
+    "price": 15000,
+    "duration": "4 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Tea capital with Himalayan views and toy train"
+  },
+  {
+    "destination": "Gangtok",
+    "price": 18000,
+    "duration": "5 Days",
+    "hotel": "4 Star",
+    "flight": "No",
+    "description": "Sikkim's capital with monasteries and mountain vistas"
+  },
+  {
+    "destination": "Khajuraho",
+    "price": 12000,
+    "duration": "3 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Ancient temples with intricate sculptures and architecture"
+  },
+  {
+    "destination": "Hampi",
+    "price": 11000,
+    "duration": "3 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "UNESCO World Heritage site with ancient ruins"
+  },
+  {
+    "destination": "Mysore",
+    "price": 9000,
+    "duration": "2 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "City of palaces with royal heritage and culture"
+  },
+  {
+    "destination": "Rishikesh",
+    "price": 8000,
+    "duration": "3 Days",
+    "hotel": "2 Star",
+    "flight": "No",
+    "description": "Yoga capital with adventure sports and spiritual retreats"
+  },
+  {
+    "destination": "Jim Corbett",
+    "price": 14000,
+    "duration": "3 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Tiger reserve with wildlife safaris and nature trails"
+  },
+  {
+    "destination": "Bandhavgarh",
+    "price": 16000,
+    "duration": "4 Days",
+    "hotel": "3 Star",
+    "flight": "No",
+    "description": "Tiger sanctuary with dense forests and wildlife"
+  },
+  {
+    "destination": "Kanha",
+    "price": 17000,
+    "duration": "4 Days",
+    "hotel": "4 Star",
+    "flight": "No",
+    "description": "Kipling's jungle with diverse wildlife and landscapes"
+  },
+  {
+    "destination": "Bhutan",
+    "price": 35000,
+    "duration": "6 Days",
+    "hotel": "3 Star",
+    "flight": "Yes",
+    "description": "Land of happiness with monasteries and mountain culture"
+  },
+  {
+    "destination": "Switzerland",
+    "price": 80000,
+    "duration": "7 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Alpine paradise with snow-capped peaks and lakes"
+  },
+  {
+    "destination": "Paris",
+    "price": 75000,
+    "duration": "6 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "City of love with iconic landmarks and culture"
+  },
+  {
+    "destination": "London",
+    "price": 85000,
+    "duration": "7 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Historic capital with royal heritage and modern culture"
+  },
+  {
+    "destination": "New York",
+    "price": 90000,
+    "duration": "8 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "The Big Apple with skyscrapers and Broadway"
+  },
+  {
+    "destination": "Tokyo",
+    "price": 95000,
+    "duration": "7 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Modern metropolis with traditional temples and technology"
+  },
+  {
+    "destination": "Australia",
+    "price": 120000,
+    "duration": "10 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Land down under with beaches, wildlife and cities"
+  },
+  {
+    "destination": "New Zealand",
+    "price": 130000,
+    "duration": "12 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Adventure capital with stunning landscapes and Maori culture"
+  },
+  {
+    "destination": "Canada",
+    "price": 110000,
+    "duration": "10 Days",
+    "hotel": "4 Star",
+    "flight": "Yes",
+    "description": "Vast wilderness with cities, mountains and lakes"
+  },
+  {
+    "destination": "Munnar Tea Gardens",
+    "price": 18000,
+    "duration": "4 Days",
+    "hotel": "4 Star",
+    "flight": "No",
+    "description": "Explore rolling tea plantations, misty hills, and colonial charm in Kerala's tea capital"
+  }
+]
