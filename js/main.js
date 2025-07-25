@@ -59,43 +59,6 @@ document.addEventListener("click", function (e) {
   if (!nav.contains(e.target)) {
     dropdowns.forEach((d) => d.classList.add("hidden"));
   }
-
-  const searchBar = document.getElementById("search-bar");
-  const searchIcon = document.querySelector("button[onclick='toggleSearch()']");
-  if (!searchBar.contains(e.target) && !searchIcon.contains(e.target)) {
-    searchBar.classList.add("hidden");
-  }
-});
-
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape") {
-    document.getElementById("search-bar").classList.add("hidden");
-  }
-});
-
-function toggleSearch() {
-  const popup = document.getElementById("search-popup");
-  const input = document.getElementById("search-input");
-  popup.classList.toggle("hidden");
-  if (!popup.classList.contains("hidden")) {
-    input.focus();
-  }
-}
-
-// Close popup if click outside or press Esc
-document.addEventListener("click", function (e) {
-  const container = document.getElementById("search-container");
-  const popup = document.getElementById("search-popup");
-
-  if (!container.contains(e.target)) {
-    popup.classList.add("hidden");
-  }
-});
-
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape") {
-    document.getElementById("search-popup").classList.add("hidden");
-  }
 });
 
 // Search functionality for filter section

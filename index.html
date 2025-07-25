@@ -67,9 +67,9 @@
         class="max-w-[1470px] h-[65px] mx-auto px-4 flex items-center justify-between"
       >
         <!-- Logo -->
-        <div class="text-2xl font-bold text-blue-600">
+        <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition">
           Reserve<span class="text-gray-900">MyTrip</span>
-        </div>
+        </a>
 
         <!-- Menu -->
         <nav
@@ -134,58 +134,11 @@
 
           <a href="#" class="hover:text-blue-600 transition">About</a>
           <a href="#" class="hover:text-blue-600 transition">Contact</a>
-
-          <!-- Search Icon -->
-          <div class="relative" id="search-container">
-            <button
-              onclick="toggleSearch()"
-              class="text-gray-600 hover:text-blue-600"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 21l-4.35-4.35M5 11a6 6 0 1112 0 6 6 0 01-12 0z"
-                />
-              </svg>
-            </button>
-
-            <!-- Floating Search Box -->
-            <div
-              id="search-popup"
-              class="hidden absolute top-8 right-0 bg-white border shadow-lg rounded px-4 py-2 w-64 z-50"
-            >
-              <input
-                type="text"
-                placeholder="Search tours..."
-                id="search-input"
-                class="w-full px-3 py-2 border rounded text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-          </div>
         </nav>
       </div>
     </header>
 
-    <!-- ✅ Search Bar BELOW the navbar -->
-    <!-- ✅ Clean & Small Search Bar -->
-    <div id="search-bar" class="hidden bg-white border-b shadow py-4">
-      <div class="max-w-md mx-auto px-4">
-        <input
-          type="text"
-          placeholder="Search tours..."
-          class="w-full px-4 py-2 border rounded text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          id="search-input"
-        />
-      </div>
-    </div>
+
         <!-- filter section -->
 
 
