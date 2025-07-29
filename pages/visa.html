@@ -266,77 +266,138 @@
     </section>  -->
 
     <!-- Contact Section -->
-    <section class="py-16 bg-blue-600 text-white">
-        <div class="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-xl">
-            <h2 class="text-2xl font-bold mb-4">Visa Application Form</h2>
-          
-            <form id="visaForm" class="space-y-4">
-              <input type="text" id="name" placeholder="Your Name" required class="w-full px-4 py-3 border rounded-lg text-black" />
-              <select id="from" required class="w-full px-4 py-3 border rounded-lg text-black">
-                <option value="">Where are you from?</option>
-                <option value="India">India</option>
-                <option value="Nepal">Nepal</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-              </select>
-              <select id="destination" required class="w-full px-4 py-3 border rounded-lg text-black">
-                <option value="">Applying for which country?</option>
-                <option value="India">India</option>
-                <option value="Nepal">Nepal</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-              </select>
-              <input type="date" id="date" required class="w-full px-4 py-3 border rounded-lg text-black" />
-          
-              <button type="submit" id="whatsapp-btn" class="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition">
-                <i class="fab fa-whatsapp mr-2"></i>Send via WhatsApp
-              </button>
-            </form>
-          
-            <div id="confirmation" class="mt-4 hidden text-green-600 font-medium">
-              ✅ Form submitted! We will contact you back.
-            </div>
-          </div>
-          
-          <script>
-            document.getElementById("visaForm").addEventListener("submit", function (e) {
-              e.preventDefault();
-          
-              const name = document.getElementById("name").value.trim();
-              const from = document.getElementById("from").value;
-              const to = document.getElementById("destination").value;
-              const date = document.getElementById("date").value;
-          
-              if (!name || !from || !to || !date) {
-                alert("Please fill all fields.");
-                return;
-              }
-          
-              const message = `*Visa Enquiry*%0AName: ${name}%0AFrom: ${from}%0AApplying For: ${to}%0AApply Date: ${date}`;
-              const phoneNumber = "919931456264"; // Replace with your actual WhatsApp number
-              const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
-          
-              const win = window.open(whatsappURL, '_blank');
-          
-              if (win) {
-                win.focus();
-          
-                // show confirmation
-                document.getElementById("confirmation").classList.remove("hidden");
-          
-                // clear form
-                document.getElementById("visaForm").reset();
-              } else {
-                alert("Popup blocked! Please allow popups or manually contact us on WhatsApp.");
-              }
-            });
-          </script>
-          
-      </section>
+    <!-- Contact Section -->
+<!-- Contact Section -->
+<section class="py-16 bg-blue-600 text-white">
+    <div class="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-xl">
+      <h2 class="text-2xl font-bold mb-4 text-black">Visa Application Form</h2>
+  
+      <form id="visaForm" class="space-y-4">
+        <!-- Name Field -->
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          required
+          class="w-full px-4 py-3 border rounded-lg text-black"
+        />
+  
+        <!-- Mobile Number Field -->
+        <input
+          type="text"
+          id="mobile-number"
+          placeholder="Mobile Number"
+          required
+          class="w-full px-4 py-3 border rounded-lg text-black"
+        />
+  
+        <!-- Email Field (Optional) -->
+        <input
+          type="email"
+          id="email"
+          placeholder="Email (optional)"
+          class="w-full px-4 py-3 border rounded-lg text-black"
+        />
+  
+        <!-- From Country -->
+        <select
+          id="from"
+          required
+          class="w-full px-4 py-3 border rounded-lg text-black"
+        >
+          <option value="">Where are you from?</option>
+          <option value="India">India</option>
+          <option value="Nepal">Nepal</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+        </select>
+  
+        <!-- Destination Country -->
+        <select
+          id="destination"
+          required
+          class="w-full px-4 py-3 border rounded-lg text-black"
+        >
+          <option value="">Applying for which country?</option>
+          <option value="India">India</option>
+          <option value="Nepal">Nepal</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+        </select>
+  
+        <!-- Application Date -->
+        <input
+          type="date"
+          id="date"
+          required
+          class="w-full px-4 py-3 border rounded-lg text-black"
+        />
+  
+        <!-- WhatsApp Submit Button -->
+        <button
+          type="submit"
+          id="whatsapp-btn"
+          class="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition"
+        >
+          <i class="fab fa-whatsapp mr-2"></i>Send via WhatsApp
+        </button>
+      </form>
+  
+      <!-- Confirmation Message -->
+      <div
+        id="confirmation"
+        class="mt-4 hidden text-green-600 font-medium"
+      >
+        ✅ Form submitted! We will contact you back.
+      </div>
+    </div>
+  
+    <!-- WhatsApp Redirect Script -->
+    <script>
+      document.getElementById("visaForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        const name = document.getElementById("name").value.trim();
+        const mobile = document.getElementById("mobile-number").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const from = document.getElementById("from").value;
+        const to = document.getElementById("destination").value;
+        const date = document.getElementById("date").value;
+  
+        if (!name || !mobile || !from || !to || !date) {
+          alert("Please fill all required fields.");
+          return;
+        }
+  
+        let message = `*Visa Enquiry*%0AName: ${name}%0AMobile: ${mobile}`;
+        if (email) {
+          message += `%0AEmail: ${email}`;
+        }
+        message += `%0AFrom: ${from}%0AApplying For: ${to}%0AApply Date: ${date}`;
+  
+        const phoneNumber = "919931456264"; // Replace with your WhatsApp number
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+  
+        const win = window.open(whatsappURL, "_blank");
+  
+        if (win) {
+          win.focus();
+          document.getElementById("confirmation").classList.remove("hidden");
+          document.getElementById("visaForm").reset();
+        } else {
+          alert(
+            "Popup blocked! Please allow popups or manually contact us on WhatsApp."
+          );
+        }
+      });
+    </script>
+  </section>
+  
+  
       
 
     <!-- Footer -->
