@@ -29,7 +29,7 @@ function displaySearchCriteria(criteria) {
   let summary = [];
 
   if (criteria.source && criteria.source !== '') {
-    tags.push(`<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">From: ${criteria.source}</span>`);
+    tags.push(`<span class="bg-cyan-900 text-cyan-900 px-2 py-1 rounded">From: ${criteria.source}</span>`);
     summary.push(`from ${criteria.source}`);
   }
   
@@ -237,7 +237,7 @@ function displayPackages(packages) {
             <p><i class="fas fa-plane mr-2"></i>Flight ${package.flight === 'Yes' ? 'Included' : 'Not Included'}</p>
           </div>
           <div class="flex items-center justify-between">
-            <p class="text-blue-600 font-bold text-lg">₹${package.price.toLocaleString()}/person</p>
+            <p class="text-cyan-900 font-bold text-lg">₹${package.price.toLocaleString()}/person</p>
             <div class="space-x-2">
               <a href="https://wa.me/917790909989?text=${encodeURIComponent(`Hi, I'm interested in the ${package.destination} package for ₹${package.price.toLocaleString()}. Can you provide more details?`)}" 
                  target="_blank" 
@@ -246,7 +246,7 @@ function displayPackages(packages) {
                 Inquire
               </a>
               <button onclick="viewPackageDetails('${package.destination}')" 
-                      class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-sm font-medium transition">
+                      class="bg-cyan-900 hover:bg-cyan-800 text-white px-3 py-2 rounded text-sm font-medium transition">
                 Details
               </button>
             </div>
