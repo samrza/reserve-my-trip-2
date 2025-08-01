@@ -12,7 +12,7 @@ form.addEventListener("submit", function (e) {
 
   // ✅ Clean & Friendly WhatsApp Message Format
   const whatsappText = `Hi, I’m ${name}.\nEmail: ${email}\n\n${message}`;
-  const whatsappURL = `https://wa.me/917790909989?text=${encodeURIComponent(
+  const whatsappURL = `https://wa.me/919509457371?text=${encodeURIComponent(
     whatsappText
   )}`;
 

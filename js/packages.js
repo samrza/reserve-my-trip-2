@@ -239,7 +239,7 @@ function displayPackages(packages) {
           <div class="flex items-center justify-between">
             <p class="text-cyan-900 font-bold text-lg">₹${package.price.toLocaleString()}/person</p>
             <div class="space-x-2">
-              <a href="https://wa.me/917790909989?text=${encodeURIComponent(`Hi, I'm interested in the ${package.destination} package for ₹${package.price.toLocaleString()}. Can you provide more details?`)}" 
+              <a href="https://wa.me/919509457371?text=${encodeURIComponent(`Hi, I'm interested in the ${package.destination} package for ₹${package.price.toLocaleString()}. Can you provide more details?`)}" 
                  target="_blank" 
                  class="inline-flex items-center gap-1 bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded text-sm font-medium transition">
                 <i class="fab fa-whatsapp"></i>
@@ -318,7 +318,7 @@ function getDestinationImage(destination) {
 function viewPackageDetails(destination) {
   // For now, redirect to WhatsApp with package details
   const message = `Hi, I'd like to know more about the ${destination} package. Can you send me the detailed itinerary and inclusions?`;
-  const whatsappURL = `https://wa.me/917790909989?text=${encodeURIComponent(message)}`;
+  const whatsappURL = `https://wa.me/919509457371?text=${encodeURIComponent(message)}`;
   window.open(whatsappURL, '_blank');
 }
 
