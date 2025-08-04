@@ -12,6 +12,31 @@
     </style>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        /* Mobile Navigation Styles */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        .hamburger-line {
+            transition: all 0.3s ease;
+        }
+        .hamburger.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+    </style>
 </head>
 <body class="bg-white text-gray-800">
     <!-- Navbar -->
@@ -22,7 +47,7 @@
                 Reserve<span class="text-cyan-900">MyTrip</span>
             </a>
 
-            <!-- Menu -->
+            <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
           <a href="../index.html" class="hover:text-cyan-900 transition"
             >Home</a
@@ -45,6 +70,26 @@
             >Careers</a
           >
         </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden hamburger p-2">
+              <div class="hamburger-line w-6 h-0.5 bg-gray-800 mb-1.5"></div>
+              <div class="hamburger-line w-6 h-0.5 bg-gray-800 mb-1.5"></div>
+              <div class="hamburger-line w-6 h-0.5 bg-gray-800"></div>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t">
+          <nav class="flex flex-col py-4">
+            <a href="../index.html" class="px-4 py-3 hover:bg-gray-50 transition text-sm font-medium">Home</a>
+            <a href="../index.html#about" class="px-4 py-3 hover:bg-gray-50 transition text-sm font-medium">About</a>
+            <a href="tour.html" class="px-4 py-3 hover:bg-gray-50 transition text-sm font-medium">Tours</a>
+            <a href="adventure.html" class="px-4 py-3 hover:bg-gray-50 transition text-sm font-medium">Adventure</a>
+            <a href="../index.html#gallery" class="px-4 py-3 hover:bg-gray-50 transition text-sm font-medium">Gallery</a>
+            <a href="visa.html" class="px-4 py-3 hover:bg-gray-50 transition text-sm font-medium">Visa</a>
+            <a href="careers.html" class="px-4 py-3 hover:bg-gray-50 transition text-sm font-medium bg-cyan-50 text-cyan-900">Careers</a>
+          </nav>
         </div>
     </header>
 
@@ -356,5 +401,34 @@
       © 2025 Reservemytrip · A Unit of Mayank Enterprises · All rights reserved.
     </div>
   </footer>
+
+  <script>
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburger = document.querySelector('.hamburger');
+
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+      }
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html> 
