@@ -547,9 +547,9 @@
               >
                 Send Inquiry
               </button>
-              <a
-                href="https://wa.me/917790909989"
-                target="_blank"
+              <button
+                type="button"
+                onclick="sendToWhatsApp()"
                 class="flex items-center justify-center gap-2 text-white bg-green-600 hover:bg-green-700 px-5 py-2 rounded text-sm font-medium shadow w-full sm:w-auto"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32">
@@ -557,8 +557,8 @@
                     d="M16 2.5A13.43 13.43 0 002.5 16a13.3 13.3 0 001.8 6.6L2 30l7.6-2a13.5 13.5 0 006.4 1.6A13.5 13.5 0 0016 2.5zm0 24.9a11.1 11.1 0 01-5.6-1.5l-.4-.2-4.5 1.2 1.2-4.4-.2-.4A11.07 11.07 0 1116 27.4zm6-8c-.3-.2-1.7-.8-1.9-.9s-.4-.1-.6.2-.7.9-.9 1.1-.3.2-.6.1a9.1 9.1 0 01-2.7-1.7 9.8 9.8 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5c.1-.2.2-.4.3-.6s0-.4 0-.6a3.6 3.6 0 00-.8-1.2c-.2-.2-.4-.3-.6-.3H12a1.1 1.1 0 00-.8.4c-.3.3-1.1 1-1.1 2.5s1.2 2.9 1.4 3.1a13.9 13.9 0 005.8 4c.8.3 1.5.5 2 .6.9.1 1.7.1 2.3.1.7 0 2.2-.8 2.4-1.6s.3-1.5.2-1.6c-.1-.1-.3-.2-.6-.3z"
                   />
                 </svg>
-                Chat on WhatsApp
-              </a>
+                Send via WhatsApp
+              </button>
               <a
                 href="tel:+919509457371"
                 class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 text-sm font-semibold shadow inline-block w-full sm:w-auto text-center"
@@ -703,6 +703,14 @@
         if (firstButton) {
           firstButton.classList.add("active", "bg-cyan-900", "text-white");
         }
+        
+        // Add click handlers to all "Book Now" buttons
+        const bookNowButtons = document.querySelectorAll('button');
+        bookNowButtons.forEach(button => {
+          if (button.textContent.trim() === 'Book Now') {
+            button.addEventListener('click', scrollToForm);
+          }
+        });
       });
       
       function scrollToForm() {
@@ -710,6 +718,34 @@
         if (formSection) {
           formSection.scrollIntoView({ behavior: "smooth" });
         }
+      }
+
+      function sendToWhatsApp() {
+        // Get form data
+        const name = document.querySelector('input[name="name"]').value || 'Not provided';
+        const email = document.querySelector('input[name="email"]').value || 'Not provided';
+        const adventure = document.querySelector('select[name="adventure"]').value || 'Not specified';
+        const message = document.querySelector('textarea[name="message"]').value || 'No additional message';
+
+        // Create WhatsApp message
+        const whatsappMessage = `*Adventure Booking Inquiry*
+
+*Name:* ${name}
+*Email:* ${email}
+*Preferred Adventure:* ${adventure}
+*Message:* ${message}
+
+*Sent from ReserveMyTrip Adventure Page*`;
+
+        // Encode the message for URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        
+        // WhatsApp number (using the same number as in the form)
+        const whatsappNumber = '+919509457371'
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+        
+        // Open WhatsApp
+        window.open(whatsappUrl, '_blank');
       }
     </script>
   </body>
