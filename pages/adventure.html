@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Extreme Adventures - ReserveMyTrip</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
+<<<<<<< HEAD
         .adventure-card { transition: all 0.3s ease; }
         .adventure-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
         .category-badge {
@@ -17,44 +21,98 @@
         .land { background: linear-gradient(45deg, #8B4513, #A0522D); }
         .air { background: linear-gradient(45deg, #87CEEB, #4682B4); }
         .water { background: linear-gradient(45deg, #20B2AA, #48D1CC); }
+=======
+      .adventure-card {
+        transition: all 0.3s ease;
+      }
+      .adventure-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      .category-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+      }
+      .attractive {
+        background: linear-gradient(45deg, #4ecdc4, #4ecdc4);
+      }
+      .attention {
+        background: linear-gradient(45deg, #0f019f, #0f019f);
+      }
+      .thrilling {
+        background: linear-gradient(45deg, #fb1d1d, #fb1d1d);
+      }
+>>>>>>> d7323de7c9abcf16d0ef6d5ba6c817125f7a6200
     </style>
-</head>
-<body class="bg-white text-gray-800">
+  </head>
+  <body class="bg-white text-gray-800">
     <!-- Navbar -->
     <header class="shadow-sm border-b sticky top-0 z-50 bg-white">
-        <div class="max-w-[1470px] h-[65px] mx-auto px-4 flex items-center justify-between">
-            <a href="index.html" class="text-2xl font-bold text-cyan-900 hover:text-cyan-800 transition">
-                Reserve<span class="text-cyan-900">MyTrip</span>
-            </a>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-                <a href="index.html" class="hover:text-cyan-900 transition">Home</a>
-                <a href="index.html#about" class="hover:text-cyan-900 transition">About</a>
-                <a href="pages/tour.html" class="hover:text-cyan-900 transition">Tours</a>
-                <a href="index.html#gallery" class="hover:text-cyan-900 transition">Gallery</a>
-                <a href="index.html#blog" class="hover:text-cyan-900 transition">Blog</a>
-                <a href="pages/visa.html" class="hover:text-cyan-900 transition">Visa</a>
-                <a href="pages/careers.html" class="hover:text-cyan-900 transition">Careers</a>
-            </nav>
-        </div>
+      <div
+        class="max-w-[1470px] h-[65px] mx-auto px-4 flex items-center justify-between"
+      >
+        <a
+          href="../index.html"
+          class="text-2xl font-bold text-cyan-900 hover:text-cyan-800 transition"
+        >
+          Reserve<span class="text-cyan-900">MyTrip</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="../index.html" class="hover:text-cyan-900 transition"
+            >Home</a
+          >
+          <a href="../index.html#about" class="hover:text-cyan-900 transition"
+            >About</a
+          >
+          <a href="tour.html" class="hover:text-cyan-900 transition">Tours</a>
+          <a href="adventure.html" class="hover:text-cyan-900 transition"
+            >Adventure</a
+          >
+          <a href="../index.html#gallery" class="hover:text-cyan-900 transition"
+            >Gallery</a
+          >
+
+          <a href="visa.html" class="hover:text-cyan-900 transition">Visa</a>
+
+          <!-- <a href="#" class="hover:text-cyan-900 transition">About</a> -->
+          <a href="careers.html" class="hover:text-cyan-900 transition"
+            >Careers</a
+          >
+        </nav>
+      </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-white"
-             style="background-image: url('https://images.unsplash.com/photo-1558005530-a7958896ec60?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative z-10 text-center px-4">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">
-                Extreme <span class="text-cyan-900">Adventures</span>
-            </h1>
-            <p class="text-lg md:text-xl mb-6">Push Your Limits. Experience the Ultimate Thrill.</p>
-            <a href="#adventures" class="bg-cyan-900 hover:bg-cyan-800 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition">
-                Explore Adventures
-            </a>
-        </div>
+    <section
+      class="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-white"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="relative z-10 text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Extreme Adventures</h1>
+        <p class="text-lg md:text-xl mb-6">
+          Push Your Limits. Experience the Ultimate Thrill.
+        </p>
+        <a
+          href="#adventures"
+          class="bg-cyan-900 hover:bg-cyan-800 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition"
+        >
+          Explore Adventures
+        </a>
+      </div>
     </section>
 
     <!-- Adventure Categories Section -->
     <section id="adventures" class="py-16 bg-gray-50">
+<<<<<<< HEAD
         <div class="max-w-[1200px] mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4">
@@ -311,59 +369,508 @@
                 </div>
 
             </div>
+=======
+      <div class="max-w-[1200px] mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+            Extreme <span class="text-cyan-900">Adventure Categories</span>
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Discover our curated collection of extreme adventures, categorized
+            by intensity and thrill level.
+          </p>
+>>>>>>> d7323de7c9abcf16d0ef6d5ba6c817125f7a6200
         </div>
+
+        <!-- Category Navigation -->
+        <div class="flex justify-center mb-12">
+          <div class="flex space-x-4 bg-white rounded-lg p-2 shadow-md">
+            <button
+              onclick="filterAdventures('all')"
+              class="category-btn active px-6 py-2 rounded-md font-medium transition"
+            >
+              All Adventures
+            </button>
+            <button
+              onclick="filterAdventures('attractive')"
+              class="category-btn px-6 py-2 rounded-md font-medium transition"
+            >
+              Attractive
+            </button>
+            <button
+              onclick="filterAdventures('attention')"
+              class="category-btn px-6 py-2 rounded-md font-medium transition"
+            >
+              Attention Hold
+            </button>
+            <button
+              onclick="filterAdventures('thrilling')"
+              class="category-btn px-6 py-2 rounded-md font-medium transition"
+            >
+              Thrilling
+            </button>
+          </div>
+        </div>
+
+        <!-- Adventures Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="adventures-grid"
+        >
+          <!-- ATTRACTIVE ADVENTURES -->
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item attractive"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1642700055612-417d545771e7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Hot Air Balloon Ride"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge attractive">Attractive</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">
+                Hot Air Balloon Ride
+              </h3>
+              <p class="text-white text-sm mb-4">
+                Soar above stunning landscapes in a peaceful balloon ride.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹15,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item attractive"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1527871899604-f1425bcce779?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Stargazing"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge attractive">Attractive</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">
+                Stargazing in Remote Areas
+              </h3>
+              <p class="text-white text-sm mb-4">
+                Experience the cosmos in pristine dark skies.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹8,500/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item attractive"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1577950535580-61f1ae66a886?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Tribal Village Tours"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge attractive">Attractive</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">
+                Tribal Village Tours
+              </h3>
+              <p class="text-white text-sm mb-4">
+                Immerse yourself in indigenous cultures and traditions.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹6,500/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ATTENTION HOLD ADVENTURES -->
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item attention"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1706724728271-a81750af4b8f?q=80&w=2099&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Kayaking in Backwaters"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge attention">Attention Hold</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">
+                Kayaking in Backwaters
+              </h3>
+              <p class="text-white text-sm mb-4">
+                Navigate through serene backwaters and mangrove forests.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹4,500/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-600 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item attention"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1562183667-a159d28118ec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Jungle Safari"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge attention">Attention Hold</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Jungle Safari</h3>
+              <p class="text-white text-sm mb-4">
+                Track wildlife in their natural habitat.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹7,500/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-600 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item attention"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1548279308-0a6768ea38e7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Igloo Stay Experience"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge attention">Attention Hold</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb text-white">
+                Igloo Stay Experience
+              </h3>
+              <p class="text-white text-sm mb-4">
+                Sleep under the stars in a cozy igloo.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹12,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-600 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- THRILLING ADVENTURES -->
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item thrilling"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1629141334092-9f57a94b6686?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Skydiving"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge thrilling">Thrilling</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Skydiving</h3>
+              <p class="text-white text-sm mb-4">
+                Free fall from 10,000 feet! Ultimate adrenaline rush.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹25,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item thrilling"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1685794159611-348c1f36ebe6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Paragliding"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge thrilling">Thrilling</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Paragliding</h3>
+              <p class="text-white text-sm mb-4">
+                Soar like a bird over breathtaking landscapes.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹18,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item thrilling"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop"
+                alt="Mountain Climbing"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge thrilling">Thrilling</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">
+                Mountain Climbing
+              </h3>
+              <p class="text-white text-sm mb-4">
+                Conquer challenging peaks with expert guides.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹35,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item thrilling"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-8dd44758c2dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Scuba Diving"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge thrilling">Thrilling</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Scuba Diving</h3>
+              <p class="text-white text-sm mb-4">
+                Explore underwater worlds and coral reefs.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹22,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item thrilling"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1546180303-8cd6a7ef66b5?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Skiing in Snow"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge thrilling">Thrilling</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Skiing in Snow</h3>
+              <p class="text-white text-sm mb-4">
+                Carve through pristine snow slopes.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹28,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item thrilling"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1627887554562-0dbe886456d5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Volcano Trekking"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge thrilling">Thrilling</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">
+                Volcano Trekking
+              </h3>
+              <p class="text-white text-sm mb-4">
+                Hike to the edge of active volcanoes.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹32,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item thrilling"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1510479524860-95998e54a8c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Desert Safari"
+                class="w-full h-48 object-cover"
+              />
+              <div class="category-badge thrilling">Thrilling</div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-white">Desert Safari</h3>
+              <p class="text-white text-sm mb-4">
+                Race across sand dunes in 4x4 vehicles.
+              </p>
+              <div class="flex justify-between items-center">
+                <!-- <span class="text-cyan-900 font-bold">₹16,000/person</span> -->
+                <button
+                  onclick="scrollToForm()"
+                  class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Safety Section -->
     <section class="py-16 bg-white">
-        <div class="max-w-[1200px] mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Safety <span class="text-cyan-900">First</span></h2>
-                <p class="text-lg text-gray-600">Your safety is our top priority. All adventures include professional guides and certified equipment.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="bg-cyan-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Certified Equipment</h3>
-                    <p class="text-gray-600">All gear meets international safety standards.</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-cyan-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user-tie text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Expert Guides</h3>
-                    <p class="text-gray-600">Experienced professionals with years of expertise.</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-cyan-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heartbeat text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">Insurance Included</h3>
-                    <p class="text-gray-600">Comprehensive travel and adventure insurance.</p>
-                </div>
-            </div>
+      <div class="max-w-[1200px] mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Safety <span class="text-cyan-900">First</span>
+          </h2>
+          <p class="text-lg text-gray-600">
+            Your safety is our top priority. All adventures include professional
+            guides and certified equipment.
+          </p>
         </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div
+              class="bg-cyan-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-shield-alt text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Certified Equipment</h3>
+            <p class="text-gray-600">
+              All gear meets international safety standards.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="bg-cyan-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-user-tie text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Expert Guides</h3>
+            <p class="text-gray-600">
+              Experienced professionals with years of expertise.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="bg-cyan-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-heartbeat text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Insurance Included</h3>
+            <p class="text-gray-600">
+              Comprehensive travel and adventure insurance.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="py-16 bg-gray-50" id="contact">
-        <div class="max-w-[800px] mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
-                Ready for Your <span class="text-cyan-900">Adventure?</span>
-            </h2>
-            <div class="bg-white shadow-md rounded-lg p-8 space-y-6">
-                <form class="space-y-4" action="https://formsubmit.co/sameer4uofficial@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
-                    <input type="hidden" name="_captcha" value="false" />
-                    
-                    <div>
-                        <label class="block text-sm font-semibold mb-1 text-gray-700">Full Name</label>
-                        <input type="text" placeholder="John Doe" name="name" required
-                               class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-cyan-900 text-sm" />
-                    </div>
+    <section class="py-16 bg-gray-50" id="booking-form">
+      <div class="max-w-[800px] mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
+          Ready for Your <span class="text-cyan-900">Adventure?</span>
+        </h2>
+        <div class="bg-white shadow-md rounded-lg p-8 space-y-6">
+          <form
+            class="space-y-4"
+            action="https://formsubmit.co/sameer4uofficial@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.com/thank-you.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
 
+<<<<<<< HEAD
                     <div>
                         <label class="block text-sm font-semibold mb-1 text-gray-700">Email Address</label>
                         <input type="email" placeholder="you@example.com" name="email" required
@@ -419,79 +926,211 @@
                         </a>
                     </div>
                 </form>
+=======
+            <div>
+              <label class="block text-sm font-semibold mb-1 text-gray-700"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                placeholder="John Doe"
+                name="name"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-cyan-900 text-sm"
+              />
+>>>>>>> d7323de7c9abcf16d0ef6d5ba6c817125f7a6200
             </div>
+
+            <div>
+              <label class="block text-sm font-semibold mb-1 text-gray-700"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                placeholder="you@example.com"
+                name="email"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-cyan-900 text-sm"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold mb-1 text-gray-700"
+                >Preferred Adventure</label
+              >
+              <select
+                name="adventure"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-cyan-900 text-sm"
+              >
+                <option value="">Select an adventure</option>
+                <option value="skydiving">Skydiving</option>
+                <option value="paragliding">Paragliding</option>
+                <option value="scuba-diving">Scuba Diving</option>
+                <option value="mountain-climbing">Mountain Climbing</option>
+                <option value="hot-air-balloon">Hot Air Balloon</option>
+                <option value="jungle-safari">Jungle Safari</option>
+                <option value="volcano-trekking">Volcano Trekking</option>
+                <option value="desert-safari">Desert Safari</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold mb-1 text-gray-700"
+                >Message</label
+              >
+              <textarea
+                rows="4"
+                placeholder="Tell us about your adventure preferences..."
+                name="message"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-cyan-900 text-sm"
+                required
+              ></textarea>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+              <button
+                type="submit"
+                class="bg-cyan-900 text-white px-6 py-2 rounded hover:bg-cyan-800 text-sm font-semibold shadow"
+              >
+                Send Inquiry
+              </button>
+              <a
+                href="https://wa.me/917790909989"
+                target="_blank"
+                class="flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 px-5 py-2 rounded text-sm font-medium shadow"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32">
+                  <path
+                    d="M16 2.5A13.43 13.43 0 002.5 16a13.3 13.3 0 001.8 6.6L2 30l7.6-2a13.5 13.5 0 006.4 1.6A13.5 13.5 0 0016 2.5zm0 24.9a11.1 11.1 0 01-5.6-1.5l-.4-.2-4.5 1.2 1.2-4.4-.2-.4A11.07 11.07 0 1116 27.4zm6-8c-.3-.2-1.7-.8-1.9-.9s-.4-.1-.6.2-.7.9-.9 1.1-.3.2-.6.1a9.1 9.1 0 01-2.7-1.7 9.8 9.8 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5c.1-.2.2-.4.3-.6s0-.4 0-.6a3.6 3.6 0 00-.8-1.2c-.2-.2-.4-.3-.6-.3H12a1.1 1.1 0 00-.8.4c-.3.3-1.1 1-1.1 2.5s1.2 2.9 1.4 3.1a13.9 13.9 0 005.8 4c.8.3 1.5.5 2 .6.9.1 1.7.1 2.3.1.7 0 2.2-.8 2.4-1.6s.3-1.5.2-1.6c-.1-.1-.3-.2-.6-.3z"
+                  />
+                </svg>
+                Chat on WhatsApp
+              </a>
+              <a
+                href="tel:+919509457371"
+                class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 text-sm font-semibold shadow inline-block"
+              >
+                Urgent Callback
+              </a>
+            </div>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-10">
-        <div class="max-w-[1200px] mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-2xl font-bold text-white mb-3">
-                    Reserve<span class="text-cyan-900">MyTrip</span>
-                </h3>
-                <p class="text-sm">Your trusted partner for extreme adventures and unforgettable experiences worldwide.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-3">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="index.html" class="hover:text-cyan-900 transition-colors duration-300">Home</a></li>
-                    <li><a href="packages.html" class="hover:text-cyan-900 transition-colors duration-300">Tour Packages</a></li>
-                    <li><a href="pages/visa.html" class="hover:text-cyan-900 transition-colors duration-300">Visa Services</a></li>
-                     <li><a href="pages/careers.html" class="hover:text-cyan-900 transition-colors duration-300">Careers</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-3">Contact Info</h4>
-                <div class="text-sm text-gray-400 space-y-1">
-                    <p>📍 Jaipur, Rajasthan, India</p>
-                    <p>📧 support@reservemytrip.in</p>
-                    <p>🚨 Emergency: shubham@reservemytrip.in</p>
-                </div>
-            </div>
+      <div class="max-w-[1200px] mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-3">
+            Reserve<span class="text-cyan-900">MyTrip</span>
+          </h3>
+          <p class="text-sm">
+            Your trusted partner for extreme adventures and unforgettable
+            experiences worldwide.
+          </p>
         </div>
-        <div class="text-center text-xs text-gray-500 mt-10">
-            © 2025 Reservemytrip · A Unit of Mayank Enterprises · All rights reserved.
+        <div>
+          <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="../index.html"
+                class="hover:text-cyan-900 transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="../packages.html"
+                class="hover:text-cyan-900 transition-colors duration-300"
+                >Tour Packages</a
+              >
+            </li>
+            <li>
+              <a
+                href="visa.html"
+                class="hover:text-cyan-900 transition-colors duration-300"
+                >Visa Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="careers.html"
+                class="hover:text-cyan-900 transition-colors duration-300"
+                >Careers</a
+              >
+            </li>
+          </ul>
         </div>
+        <div>
+          <h4 class="text-white font-semibold mb-3">Contact Info</h4>
+          <div class="text-sm text-gray-400 space-y-1">
+            <p>📍 Jaipur, Rajasthan, India</p>
+            <p>📧 support@reservemytrip.in</p>
+            <p>🚨 Emergency: shubham@reservemytrip.in</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-gray-500 mt-10">
+        © 2025 Reservemytrip · A Unit of Mayank Enterprises · All rights
+        reserved.
+      </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
     <div class="fixed bottom-5 right-5 z-50 group">
-        <a href="https://wa.me/917790909989" target="_blank"
-           class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition"
-           aria-label="Chat on WhatsApp">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 32 32">
-                <path d="M16 2.5A13.43 13.43 0 002.5 16a13.3 13.3 0 001.8 6.6L2 30l7.6-2a13.5 13.5 0 006.4 1.6A13.5 13.5 0 0016 2.5zm0 24.9a11.1 11.1 0 01-5.6-1.5l-.4-.2-4.5 1.2 1.2-4.4-.2-.4A11.07 11.07 0 1116 27.4zm6-8c-.3-.2-1.7-.8-1.9-.9s-.4-.1-.6.2-.7.9-.9 1.1-.3.2-.6.1a9.1 9.1 0 01-2.7-1.7 9.8 9.8 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5c.1-.2.2-.4.3-.6s0-.4 0-.6a3.6 3.6 0 00-.8-1.2c-.2-.2-.4-.3-.6-.3H12a1.1 1.1 0 00-.8.4c-.3.3-1.1 1-1.1 2.5s1.2 2.9 1.4 3.1a13.9 13.9 0 005.8 4c.8.3 1.5.5 2 .6.9.1 1.7.1 2.3.1.7 0 2.2-.8 2.4-1.6s.3-1.5.2-1.6c-.1-.1-.3-.2-.6-.3z" />
-            </svg>
-        </a>
-        <div class="absolute right-14 top-1/2 -translate-y-1/2 bg-black text-white text-sm px-3 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-            Chat with us
-        </div>
+      <a
+        href="https://wa.me/919509457371"
+        target="_blank"
+        class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 32 32">
+          <path
+            d="M16 2.5A13.43 13.43 0 002.5 16a13.3 13.3 0 001.8 6.6L2 30l7.6-2a13.5 13.5 0 006.4 1.6A13.5 13.5 0 0016 2.5zm0 24.9a11.1 11.1 0 01-5.6-1.5l-.4-.2-4.5 1.2 1.2-4.4-.2-.4A11.07 11.07 0 1116 27.4zm6-8c-.3-.2-1.7-.8-1.9-.9s-.4-.1-.6.2-.7.9-.9 1.1-.3.2-.6.1a9.1 9.1 0 01-2.7-1.7 9.8 9.8 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5c.1-.2.2-.4.3-.6s0-.4 0-.6a3.6 3.6 0 00-.8-1.2c-.2-.2-.4-.3-.6-.3H12a1.1 1.1 0 00-.8.4c-.3.3-1.1 1-1.1 2.5s1.2 2.9 1.4 3.1a13.9 13.9 0 005.8 4c.8.3 1.5.5 2 .6.9.1 1.7.1 2.3.1.7 0 2.2-.8 2.4-1.6s.3-1.5.2-1.6c-.1-.1-.3-.2-.6-.3z"
+          />
+        </svg>
+      </a>
+      <div
+        class="absolute right-14 top-1/2 -translate-y-1/2 bg-black text-white text-sm px-3 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+      >
+        Chat with us
+      </div>
     </div>
 
     <script>
-        function filterAdventures(category) {
-            const items = document.querySelectorAll('.adventure-item');
-            const buttons = document.querySelectorAll('.category-btn');
-            
-            buttons.forEach(btn => btn.classList.remove('active', 'bg-cyan-900', 'text-white'));
-            event.target.classList.add('active', 'bg-cyan-900', 'text-white');
-            
-            items.forEach(item => {
-                if (category === 'all' || item.classList.contains(category)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
+      function filterAdventures(category) {
+        const items = document.querySelectorAll(".adventure-item");
+        const buttons = document.querySelectorAll(".category-btn");
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const firstButton = document.querySelector('.category-btn');
-            if (firstButton) {
-                firstButton.classList.add('active', 'bg-cyan-900', 'text-white');
-            }
+        buttons.forEach((btn) =>
+          btn.classList.remove("active", "bg-cyan-900", "text-white")
+        );
+        event.target.classList.add("active", "bg-cyan-900", "text-white");
+
+        items.forEach((item) => {
+          if (category === "all" || item.classList.contains(category)) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
         });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const firstButton = document.querySelector(".category-btn");
+        if (firstButton) {
+          firstButton.classList.add("active", "bg-cyan-900", "text-white");
+        }
+      });
+      function scrollToForm() {
+        const formSection = document.getElementById("booking-form");
+        if (formSection) {
+          formSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
