@@ -1,986 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReserveMyTrip - Best Tour Packages for Manali, Goa, Ladakh & More</title>
-<meta name="description" content="ReserveMyTrip offers affordable, customizable travel packages to destinations like Manali, Goa, Ladakh, Thailand & more. Expert guides, 24/7 support & transparent pricing.">
-<meta name="keywords" content="Manali tour, Goa travel, Ladakh trip, Thailand package, Rajasthan tours, budget travel India, ReserveMyTrip">
-<meta name="author" content="ReserveMyTrip">
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="ReserveMyTrip - Explore Top Travel Packages Across India & Abroad" />
-<meta property="og:description" content="From Manali to Thailand, book your perfect tour with ReserveMyTrip. Personalized service, expert guides, best prices." />
-<meta property="og:image" content="https://yourdomain.com/path-to-cover-image.jpg" />
-<meta property="og:url" content="https://reservemytrip.in/" />
-<meta property="og:type" content="website" />
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ReserveMyTrip - Explore Top Travel Packages Across India & Abroad">
-<meta name="twitter:description" content="From Manali to Thailand, book your perfect tour with ReserveMyTrip. Personalized service, expert guides, best prices.">
-<meta name="twitter:image" content="https://yourdomain.com/path-to-cover-image.jpg">
-
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .dropdown-menu {
-        transition: opacity 0.2s ease, transform 0.2s ease;
-      }
-      
-    </style>
-
-    <link rel="icon" href="/favicon.ico" />
-<link rel="manifest" href="/manifest.json" />
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Reservemytrip",
-    "url": "https://reservemytrip.in",
-    "logo": "https://reservemytrip.in/logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-9876543210",
-      "contactType": "Customer Support"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Delhi",
-      "addressCountry": "IN"
-    }
-  }
-  </script>
-  <link rel="stylesheet" href="css/styles.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-
-
-  </head>
-  <body class="bg-white text-gray-800">
-    <!-- Navbar -->
-    <header class="shadow-sm border-b sticky top-0 z-50 bg-white">
-      <div
-        class="max-w-[1470px] h-[65px] mx-auto px-4 flex items-center justify-between"
-      >
-        <!-- Logo -->
-        <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition">
-          Reserve<span class="text-gray-900">MyTrip</span>
-        </a>
-
-        <!-- Menu -->
-        <nav
-          class="hidden md:flex items-center gap-6 text-sm font-medium relative"
-          id="navbar"
-        >
-          <a href="#" class="hover:text-blue-600 transition">Home</a>
-
-          <!-- Tours -->
-          <!-- <div class="relative">
-            <button
-              onclick="toggleDropdown('tours')"
-              class="hover:text-blue-600 transition"
-            > -->
-              <!-- Tours
-            </button>
-            <div
-              id="dropdown-tours"
-              class="absolute hidden bg-white border rounded shadow-md mt-2 p-3 w-40 space-y-2 z-50"
-            >
-              <a href="#" class="block hover:text-blue-600">Manali</a>
-              <a href="#" class="block hover:text-blue-600">Goa</a>
-              <a href="#" class="block hover:text-blue-600">Ladakh</a>
-            </div>
-          </div> -->
-
-          <!-- Destinations -->
-          <!-- <div class="relative">
-            <button
-              onclick="toggleDropdown('dest')"
-              class="hover:text-blue-600 transition"
-            >
-              Destinations
-            </button>
-            <div
-              id="dropdown-dest"
-              class="absolute hidden bg-white border rounded shadow-md mt-2 p-3 w-40 space-y-2 z-50"
-            >
-              <a href="#" class="block hover:text-blue-600">Himachal</a>
-              <a href="#" class="block hover:text-blue-600">Rajasthan</a>
-              <a href="#" class="block hover:text-blue-600">Kerala</a>
-            </div>
-          </div> -->
-
-          <!-- International -->
-          <!-- <div class="relative">
-            <button
-              onclick="toggleDropdown('int')"
-              class="hover:text-blue-600 transition"
-            >
-              International
-            </button>
-            <div
-              id="dropdown-int"
-              class="absolute hidden bg-white border rounded shadow-md mt-2 p-3 w-48 space-y-2 z-50"
-            >
-              <a href="#" class="block hover:text-blue-600">Thailand</a>
-              <a href="#" class="block hover:text-blue-600">Dubai</a>
-              <a href="#" class="block hover:text-blue-600">Vietnam</a>
-            </div>
-          </div> -->
-
-          <a href="#about" class="hover:text-blue-600 transition">About</a>
-          <a href="pages/tour.html" class="hover:text-blue-600 transition">Tours</a>
-          <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
-          <a href="#blog" class="hover:text-blue-600 transition">Blog</a>
-
-          <a href="pages/visa.html" class="hover:text-blue-600 transition">Visa</a>
-
-
-          <!-- <a href="#" class="hover:text-blue-600 transition">About</a> -->
-          <a href="pages/careers.html" class="hover:text-blue-600 transition">Careers</a>
-        </nav>
-      </div>
-    </header>
-
-
-        <!-- filter section -->
-
-
-    <section class="package-filter">
-      <div class="filter-box">
-        <section class="text-center mt-8">
-          <h2 class="text-4xl font-bold text-black">Holiday Packages</h2>
-          <p class="text-sm text-gray-500 mt-1">India & International</p>
-        </section>
-        
-        <!-- Quick Search -->
-        <div class="quick-search mb-6">
-          <div class="text-center">
-            <h3 class="text-lg font-semibold text-gray-700 mb-3">Quick Search</h3>
-            <div class="flex gap-2 justify-center mb-3">
-              <input type="text" id="quick-search-input" placeholder="Type any destination (manali, goa, thailand, etc.)" 
-                     class="flex-1 max-w-md px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-900">
-              <button onclick="quickSearch()" class="bg-cyan-900 hover:bg-cyan-700 text-white px-6 py-2 rounded-lg font-medium transition">
-                Quick Search
-              </button>
-            </div>
-            <div class="popular-destinations">
-              <!-- <p class="text-sm text-gray-600 mb-2">Popular destinations (case doesn't matter): </p> -->
-              <div class="flex flex-wrap gap-2 justify-center">
-                <button onclick="quickSearchDestination('Manali')" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm transition">Manali</button>
-                <button onclick="quickSearchDestination('Goa')" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm transition">Goa</button>
-                <button onclick="quickSearchDestination('Thailand')" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm transition">Thailand</button>
-                <button onclick="quickSearchDestination('Dubai')" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm transition">Dubai</button>
-                <button onclick="quickSearchDestination('Ladakh')" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm transition">Ladakh</button>
-                <button onclick="quickSearchDestination('Kerala')" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm transition">Kerala</button>
-                <button onclick="quickSearchDestination('Munnar Tea Gardens')" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm transition">Munnar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-    
-   <div class="filter-group">
-  <label>Starting From <small>(Optional)</small></label>
-  <div class="input-box">
-    <i class="fas fa-map-marker-alt"></i>
-    <select class="dropdown-select" id="source">
-      <option value="">Any City (Show All)</option>
-      <optgroup label="Major Cities">
-        <option value="New Delhi">New Delhi</option>
-        <option value="Mumbai">Mumbai</option>
-        <option value="Bangalore">Bangalore</option>
-        <option value="Chennai">Chennai</option>
-        <option value="Kolkata">Kolkata</option>
-        <option value="Hyderabad">Hyderabad</option>
-        <option value="Pune">Pune</option>
-        <option value="Ahmedabad">Ahmedabad</option>
-      </optgroup>
-      <optgroup label="Tourist Cities">
-        <option value="Jaipur">Jaipur</option>
-        <option value="Goa">Goa</option>
-        <option value="Agra">Agra</option>
-        <option value="Varanasi">Varanasi</option>
-        <option value="Shimla">Shimla</option>
-        <option value="Manali">Manali</option>
-        <option value="Ooty">Ooty</option>
-        <option value="Coorg">Coorg</option>
-      </optgroup>
-      <optgroup label="International">
-        <option value="Dubai">Dubai</option>
-        <option value="Bangkok">Bangkok</option>
-        <option value="Singapore">Singapore</option>
-        <option value="Bali">Bali</option>
-        <option value="Paris">Paris</option>
-        <option value="London">London</option>
-        <option value="New York">New York</option>
-        <option value="Tokyo">Tokyo</option>
-      </optgroup>
-    </select>
-  </div>
-</div>
-
-
-
-<div class="filter-group">
-  <label>Travelling To</label>
-  <div class="input-box">
-    <i class="fas fa-map-marker-alt"></i>
-    <select id="destination" class="dropdown-select">
-      <option value="">All Destinations (Show All)</option>
-
-      <optgroup label="Beach Destinations">
-        <option value="Goa">Goa</option>
-        <option value="Andaman">Andaman</option>
-        <option value="Maldives">Maldives</option>
-        <option value="Bali">Bali</option>
-        <option value="Thailand">Thailand</option>
-        <option value="Sri Lanka">Sri Lanka</option>
-      </optgroup>
-
-      <optgroup label="Hill Stations">
-        <option value="Manali">Manali</option>
-        <option value="Shimla">Shimla</option>
-        <option value="Ooty">Ooty</option>
-        <option value="Coorg">Coorg</option>
-        <option value="Kashmir">Kashmir</option>
-        <option value="Ladakh">Ladakh</option>
-        <option value="Darjeeling">Darjeeling</option>
-        <option value="Gangtok">Gangtok</option>
-      </optgroup>
-
-      <optgroup label="Cultural & Heritage">
-        <option value="Jaipur">Jaipur</option>
-        <option value="Agra">Agra</option>
-        <option value="Varanasi">Varanasi</option>
-        <option value="Rajasthan">Rajasthan</option>
-        <option value="Kerala">Kerala</option>
-        <option value="Munnar Tea Gardens">Munnar Tea Gardens</option>
-        <option value="Khajuraho">Khajuraho</option>
-        <option value="Hampi">Hampi</option>
-        <option value="Mysore">Mysore</option>
-      </optgroup>
-
-      <optgroup label="Adventure & Wildlife">
-        <option value="Rishikesh">Rishikesh</option>
-        <option value="Jim Corbett">Jim Corbett</option>
-        <option value="Bandhavgarh">Bandhavgarh</option>
-        <option value="Kanha">Kanha</option>
-        <option value="Nepal">Nepal</option>
-        <option value="Bhutan">Bhutan</option>
-      </optgroup>
-
-      <optgroup label="International">
-        <option value="Dubai">Dubai</option>
-        <option value="Singapore">Singapore</option>
-        <option value="Switzerland">Switzerland</option>
-        <option value="Paris">Paris</option>
-        <option value="London">London</option>
-        <option value="New York">New York</option>
-        <option value="Tokyo">Tokyo</option>
-        <option value="Australia">Australia</option>
-        <option value="New Zealand">New Zealand</option>
-        <option value="Canada">Canada</option>
-      </optgroup>
-    </select>
-  </div>
-</div>
-
-
-    
-        <div class="row">
-          <div class="filter-group half">
-            <label>Starting Date <small>(Optional)</small></label>
-            <div class="input-box">
-              <i class="fas fa-calendar-alt"></i>
-              <input  type="date" id="date">
-            </div>
-          </div>
-          <div class="filter-group half">
-            <label>Guests <small>(Optional)</small></label>
-            <div class="input-box">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Number of guests" id="guests-input">
-            </div>
-          </div>
-        </div>
-    
-        <div class="filter-dropdowns">
-          <label>Choose Filters <small>(Optional)</small></label>
-          <div class="dropdowns">
-            <select id="budget-input">
-              <option disabled selected>Budget</option>
-              <option>Under ₹20,000</option>
-              <option>₹20,000 - ₹50,000</option>
-              <option>₹50,000 - ₹1,00,000</option>
-              <option >₹1,00,000 - ₹3,00,000</option>
-              <option >₹3,00,000+</option>
-            </select>
-            <select id="duration-select">
-              <option disabled selected>Duration</option>
-              <option>1-3 Days</option>
-              <option>4-6 Days</option>
-              <option>7+ Days</option>
-            </select>
-            <select id="hotel">
-              <option disabled selected>Hotel Category</option>
-              <option>2 Star</option>
-              <option>3 Star</option>
-              <option>4 Star</option>
-              <option>5 Star</option>
-            </select>
-            <select id="flight">
-              <option disabled selected>Flights</option>
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
-        </div>
-    
-        <button class="search-btn" id="search-btn">Search</button>
-      </div>
-    </section>
-
-
-
-
-
-    
-
-
-       <!-- Tour Packages Section -->
-<section class="py-14 bg-white" id="packages">
-  <div class="max-w-[1200px] mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
-      Our <span class="text-blue-600">Tour Packages</span>
-    </h2>
-
-    <!-- Horizontal Scroll Slider -->
-    <div class="flex space-x-6 overflow-x-auto pb-4 scroll-smooth snap-x">
-      
-      <!-- Manali -->
-      <div class="min-w-[280px] snap-start bg-gray-50 rounded-lg shadow hover:shadow-md transition overflow-hidden">
-        <img src="https://images.pexels.com/photos/7086906/pexels-photo-7086906.jpeg" alt="Manali" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-1">Manali Getaway</h3>
-          <p class="text-sm text-gray-600">3N/4D – Snow, valleys & adventure.</p>
-          <p class="text-blue-600 font-bold text-lg mt-2">₹6,999/person</p>
-          <a href="manali.html" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm rounded">
-            View Details
-          </a>
-        </div>
-      </div>
-
-      <!-- Goa -->
-      <div class="min-w-[280px] snap-start bg-gray-50 rounded-lg shadow hover:shadow-md transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1652820330085-82a0c2b88d78" alt="Goa" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-1">Goa Beach Escape</h3>
-          <p class="text-sm text-gray-600">2N/3D – Beach life & nightlife.</p>
-          <p class="text-blue-600 font-bold text-lg mt-2">₹5,499/person</p>
-          <a href="goa.html" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm rounded">
-            View Details
-          </a>
-        </div>
-      </div>
-
-      <!-- Ladakh -->
-      <div class="min-w-[280px] snap-start bg-gray-50 rounded-lg shadow hover:shadow-md transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1593118845043-359e5f628214" alt="Ladakh" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-1">Ladakh Adventure</h3>
-          <p class="text-sm text-gray-600">5N/6D – High passes & monasteries.</p>
-          <p class="text-blue-600 font-bold text-lg mt-2">₹12,999/person</p>
-          <a href="ladakh.html" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm rounded">
-            View Details
-          </a>
-        </div>
-      </div>
-
-      <!-- Rajasthan -->
-      <div class="min-w-[280px] snap-start bg-gray-50 rounded-lg shadow hover:shadow-md transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1614181081801-f241632a4d49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rajasthan" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-1">Royal Rajasthan</h3>
-          <p class="text-sm text-gray-600">4N/5D – Forts, culture, and desert fun.</p>
-          <p class="text-blue-600 font-bold text-lg mt-2">₹8,999/person</p>
-          <a href="#" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm rounded">
-            View Details
-          </a>
-        </div>
-      </div>
-
-      <!-- Thailand -->
-      <div class="min-w-[280px] snap-start bg-gray-50 rounded-lg shadow hover:shadow-md transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Thailand" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-1">Thailand Tour</h3>
-          <p class="text-sm text-gray-600">5N/6D – Islands, temples & nightlife.</p>
-          <p class="text-blue-600 font-bold text-lg mt-2">₹24,999/person</p>
-          <a href="thailand.html" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm rounded">
-            View Details
-          </a>
-        </div>
-      </div>
-
-      <!-- Himachal -->
-      <div class="min-w-[280px] snap-start bg-gray-50 rounded-lg shadow hover:shadow-md transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himachal" class="w-full h-48 object-cover">
-        <div class="p-5">
-          <h3 class="text-xl font-semibold mb-1">Himachal Delight</h3>
-          <p class="text-sm text-gray-600">6N/7D – Shimla, Manali & Dharamshala.</p>
-          <p class="text-blue-600 font-bold text-lg mt-2">₹14,499/person</p>
-          <a href="#" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm rounded">
-            View Details
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- More Button -->
-    <div class="text-center mt-10">
-      <a href="packages.html" class="inline-block bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-full transition">
-        View All Packages
-      </a>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Hero Section -->
-    <section
-      class="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-white"
-      style="
-        background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      "
-    >
-      <!-- Dark overlay -->
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-
-      <!-- Content -->
-      <div class="relative z-10 text-center px-4">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">
-          Explore the World with
-          <span class="text-blue-400">ReserveMyTrip</span>
-        </h1>
-        <p class="text-lg md:text-xl mb-6">
-          Unforgettable Journeys. Local Expertise. Personalized Service.
-        </p>
-        <div class="space-x-4">
-          <a
-            href="#packages"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded shadow"
-          >
-            Book Now
-          </a>
-          <a
-            href="#contact"
-            class="bg-white hover:bg-gray-100 text-blue-700 font-semibold px-6 py-2 rounded shadow"
-          >
-            Contact Us
-          </a>
-        </div>
-      </div>
-    </section>
-
-    
- 
-
-      <!-- Gallery Section -->
-      <section class="py-14 bg-white" id="gallery">
-        <div class="max-w-[1200px] mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
-            Travel <span class="text-blue-600">Gallery</span>
-          </h2>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <!-- Image 1 -->
-            <div class="overflow-hidden rounded shadow">
-              <img
-                src="https://images.pexels.com/photos/32693364/pexels-photo-32693364.jpeg?_gl=1*2wr08k*_ga*MTc1NTA5NDA3Ny4xNzUyNTE2MDg4*_ga_8JE65Q40S6*czE3NTI1MTYwODgkbzEkZzEkdDE3NTI1MTY3NjckajU5JGwwJGgw"
-                alt="Travel"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-
-            <!-- Image 2 -->
-            <div class="overflow-hidden rounded shadow">
-              <img
-                src="https://images.pexels.com/photos/3974089/pexels-photo-3974089.jpeg?_gl=1*516tb2*_ga*MTc1NTA5NDA3Ny4xNzUyNTE2MDg4*_ga_8JE65Q40S6*czE3NTI1MTYwODgkbzEkZzEkdDE3NTI1MTY3MjQkajQkbDAkaDA."
-                alt="Beach"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-
-            <!-- Image 3 -->
-            <div class="overflow-hidden rounded shadow">
-              <img
-                src="https://images.pexels.com/photos/2907578/pexels-photo-2907578.jpeg?_gl=1*93k5zd*_ga*MTc1NTA5NDA3Ny4xNzUyNTE2MDg4*_ga_8JE65Q40S6*czE3NTI1MTYwODgkbzEkZzEkdDE3NTI1MTY3MDMkajI1JGwwJGgw"
-                alt="Adventure"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-
-            <!-- Image 4 -->
-            <div class="overflow-hidden rounded shadow">
-              <img
-                src="https://images.pexels.com/photos/1187715/pexels-photo-1187715.jpeg?_gl=1*dzh810*_ga*MTc1NTA5NDA3Ny4xNzUyNTE2MDg4*_ga_8JE65Q40S6*czE3NTI1MTYwODgkbzEkZzEkdDE3NTI1MTY2MjAkajMyJGwwJGgw"
-                alt="Nature"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-
-            <!-- Image 5 -->
-            <div class="overflow-hidden rounded shadow">
-              <img
-                src="https://images.pexels.com/photos/6576294/pexels-photo-6576294.jpeg?_gl=1*1siew8c*_ga*MTc1NTA5NDA3Ny4xNzUyNTE2MDg4*_ga_8JE65Q40S6*czE3NTI1MTYwODgkbzEkZzEkdDE3NTI1MTY1OTMkajU5JGwwJGgw"
-                alt="Trek"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-
-            <!-- Image 6 -->
-            <div class="overflow-hidden rounded shadow">
-              <img
-                src="https://images.pexels.com/photos/2276797/pexels-photo-2276797.jpeg?_gl=1*2hy0si*_ga*MTc1NTA5NDA3Ny4xNzUyNTE2MDg4*_ga_8JE65Q40S6*czE3NTI1MTYwODgkbzEkZzEkdDE3NTI1MTYzODQkajU5JGwwJGgw"
-                alt="Group Trip"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials Section -->
-      <section class="py-14 bg-gray-50" id="testimonials">
-        <div class="max-w-[1000px] mx-auto px-4 text-center">
-          <h2 class="text-3xl font-bold text-gray-800 mb-10">
-            What <span class="text-blue-600">Travelers Say</span>
-          </h2>
-
-          <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 text-left">
-            <!-- Testimonial 1 -->
-            <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-              <p class="text-sm text-gray-600 mb-4">
-                "Amazing experience! Everything was perfectly organized. Manali
-                trip was beyond expectations."
-              </p>
-              <div class="flex items-center gap-3">
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Ravi"
-                  class="w-10 h-10 rounded-full"
-                />
-                <div>
-                  <p class="font-semibold text-sm">Ravi Sharma</p>
-                  <p class="text-xs text-gray-500">Delhi, India</p>
+<!-- LAND ADVENTURES -->
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item land">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1608501407963-8a036afbb8f2?q=80&w=2134&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Tribal Village Tours" class="w-full h-48 object-cover">
+                        <div class="category-badge land">Land</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Tribal Village Tours</h3>
+                        <p class="text-gray-600 text-sm mb-4">Immerse yourself in indigenous cultures and traditions.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Testimonial 2 -->
-            <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-              <p class="text-sm text-gray-600 mb-4">
-                "Best tour agency we’ve used. Highly professional and always
-                available. The Goa trip was seamless."
-              </p>
-              <div class="flex items-center gap-3">
-                <img
-                  src="https://randomuser.me/api/portraits/women/44.jpg"
-                  alt="Ayesha"
-                  class="w-10 h-10 rounded-full"
-                />
-                <div>
-                  <p class="font-semibold text-sm">Ayesha Khan</p>
-                  <p class="text-xs text-gray-500">Mumbai, India</p>
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item land">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1669021820355-7186908380d9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Jungle Safari" class="w-full h-48 object-cover">
+                        <div class="category-badge land">Land</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Jungle Safari</h3>
+                        <p class="text-gray-600 text-sm mb-4">Track wildlife in their natural habitat.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Testimonial 3 -->
-            <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-              <p class="text-sm text-gray-600 mb-4">
-                "Loved our Ladakh tour! Guides were super friendly, everything
-                was safe and smooth. Will book again."
-              </p>
-              <div class="flex items-center gap-3">
-                <img
-                  src="https://randomuser.me/api/portraits/men/76.jpg"
-                  alt="Vikram"
-                  class="w-10 h-10 rounded-full"
-                />
-                <div>
-                  <p class="font-semibold text-sm">Vikram Joshi</p>
-                  <p class="text-xs text-gray-500">Bangalore, India</p>
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item land">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1652601373869-3fae01d76f8e?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Igloo Stay Experience" class="w-full h-48 object-cover">
+                        <div class="category-badge land">Land</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Igloo Stay Experience</h3>
+                        <p class="text-gray-600 text-sm mb-4">Sleep under the stars in a cozy igloo.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item land">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1634742193353-49a7d1667e1c?q=80&w=974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Mountain Climbing" class="w-full h-48 object-cover">
+                        <div class="category-badge land">Land</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Mountain Climbing</h3>
+                        <p class="text-gray-600 text-sm mb-4">Conquer challenging peaks with expert guides.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item land">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1631779210471-5bac8623e517?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Skiing in Snow" class="w-full h-48 object-cover">
+                        <div class="category-badge land">Land</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Skiing in Snow</h3>
+                        <p class="text-gray-600 text-sm mb-4">Carve through pristine snow slopes.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item land">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1627887554562-0dbe886456d5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Volcano Trekking" class="w-full h-48 object-cover">
+                        <div class="category-badge land">Land</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Volcano Trekking</h3>
+                        <p class="text-gray-600 text-sm mb-4">Hike to the edge of active volcanoes.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item land">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/flagged/photo-1550489518-40f49ba4bf20?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Desert Safari" class="w-full h-48 object-cover">
+                        <div class="category-badge land">Land</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Desert Safari</h3>
+                        <p class="text-gray-600 text-sm mb-4">Race across sand dunes in 4x4 vehicles.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AIR ADVENTURES -->
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item air">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1507691640734-887fa7be3377?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Hot Air Balloon Ride" class="w-full h-48 object-cover">
+                        <div class="category-badge air">Air</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Hot Air Balloon Ride</h3>
+                        <p class="text-gray-600 text-sm mb-4">Soar above stunning landscapes in a peaceful balloon ride.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item air">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1527871899604-f1425bcce779?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Stargazing" class="w-full h-48 object-cover">
+                        <div class="category-badge air">Air</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Stargazing in Remote Areas</h3>
+                        <p class="text-gray-600 text-sm mb-4">Experience the cosmos in pristine dark skies.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item air">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Skydiving" class="w-full h-48 object-cover">
+                        <div class="category-badge air">Air</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Skydiving</h3>
+                        <p class="text-gray-600 text-sm mb-4">Free fall from 10,000 feet! Ultimate adrenaline rush.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item air">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1573507712396-586c2fc99b36?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Paragliding" class="w-full h-48 object-cover">
+                        <div class="category-badge air">Air</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Paragliding</h3>
+                        <p class="text-gray-600 text-sm mb-4">Soar like a bird over breathtaking landscapes.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WATER ADVENTURES -->
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item water">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1588472235276-7638965471e2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Kayaking in Backwaters" class="w-full h-48 object-cover">
+                        <div class="category-badge water">Water</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Kayaking in Backwaters</h3>
+                        <p class="text-gray-600 text-sm mb-4">Navigate through serene backwaters and mangrove forests.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adventure-card bg-white rounded-xl shadow-lg overflow-hidden adventure-item water">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Scuba Diving" class="w-full h-48 object-cover">
+                        <div class="category-badge water">Water</div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Scuba Diving</h3>
+                        <p class="text-gray-600 text-sm mb-4">Explore underwater worlds and coral reefs.</p>
+                        <div class="flex justify-center">
+                            <button class="bg-cyan-900 hover:bg-cyan-800 text-white px-4 sm:px-6 py-2 rounded-lg text-sm font-medium transition">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </section>
-
-      <!-- About Us Section -->
-<section class="py-14 bg-gray-50" id="about">
-  <div class="max-w-[1200px] mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-    
-    <!-- Text Content -->
-    <div>
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">
-        About <span class="text-blue-600">Reservemytrip</span>
-      </h2>
-      <p class="text-gray-700 text-sm leading-relaxed mb-4">
-        Reservemytrip (A Unit of Mayank Enterprises) is your trusted travel partner for unforgettable domestic and international journeys. We specialize in creating personalized tour packages, providing expert local guides, and ensuring a smooth, joyful experience from start to finish.
-      </p>
-      <p class="text-gray-700 text-sm leading-relaxed mb-6">
-        Our mission is to make travel easier, affordable, and more meaningful for solo adventurers, couples, families, and groups — with a focus on transparency, service, and flexibility.
-      </p>
-
-      <!-- Contact Info in About Us -->
-      <div class="text-sm text-gray-600 space-y-1">
-        <p>📍 Jaipur, Rajasthan, India</p>
-        <p>📧 support@reservemytrip.in</p>
-        <p>🚨 Emergency: shubham@reservemytrip.in</p>
-      </div>
-    </div>
-
-    <!-- Image -->
-    <div>
-      <img src="images/about-section-img.jpeg" alt="About Us" class="rounded shadow-md" />
-    </div>
-  </div>
-</section>
-
-
-    <!-- Testimonials Section -->
-    <!-- <section class="py-14 bg-gray-50" id="testimonials">
-      <div class="max-w-[1000px] mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10">
-          What <span class="text-blue-600">Travelers Say</span>
-        </h2>
-
-        <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 text-left"> -->
-          <!-- Testimonial 1 -->
-          <!-- <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-            <p class="text-sm text-gray-600 mb-4">
-              "Amazing experience! Everything was perfectly organized. Manali
-              trip was beyond expectations."
-            </p>
-            <div class="flex items-center gap-3">
-              <img
-                src="https://randomuser.me/api/portraits/men/32.jpg"
-                alt="Ravi"
-                class="w-10 h-10 rounded-full"
-              />
-              <div>
-                <p class="font-semibold text-sm">Ravi Sharma</p>
-                <p class="text-xs text-gray-500">Delhi, India</p>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Testimonial 2 -->
-          <!-- <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-            <p class="text-sm text-gray-600 mb-4">
-              "Best tour agency we’ve used. Highly professional and always
-              available. The Goa trip was seamless."
-            </p>
-            <div class="flex items-center gap-3">
-              <img
-                src="https://randomuser.me/api/portraits/women/44.jpg"
-                alt="Ayesha"
-                class="w-10 h-10 rounded-full"
-              />
-              <div>
-                <p class="font-semibold text-sm">Ayesha Khan</p>
-                <p class="text-xs text-gray-500">Mumbai, India</p>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Testimonial 3 -->
-          <!-- <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-            <p class="text-sm text-gray-600 mb-4">
-              "Loved our Ladakh tour! Guides were super friendly, everything was
-              safe and smooth. Will book again."
-            </p>
-            <div class="flex items-center gap-3">
-              <img
-                src="https://randomuser.me/api/portraits/men/76.jpg"
-                alt="Vikram"
-                class="w-10 h-10 rounded-full"
-              />
-              <div>
-                <p class="font-semibold text-sm">Vikram Joshi</p>
-                <p class="text-xs text-gray-500">Bangalore, India</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Why Travel With Us -->
-    <section class="py-12 bg-gray-50">
-      <div class="max-w-[1200px] mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8">
-          Why <span class="text-blue-600">ReserveMyTrip?</span>
-        </h2>
-    
-        <div class="grid gap-8 md:grid-cols-3 text-left">
-          
-          <!-- Block 1 -->
-          <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-            <h3 class="font-semibold text-lg mb-2 text-gray-800">Trusted & Transparent</h3>
-            <p class="text-sm text-gray-600">
-              ReserveMyTrip is known for unbeatable travel deals, seamless bookings, and a user-friendly website. With exclusive offers like Instant Discounts and Fare Calendars, we’re committed to value and reliability for every traveler.
-            </p>
-          </div>
-    
-          <!-- Block 2 -->
-          <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-            <h3 class="font-semibold text-lg mb-2 text-gray-800">Flights with ReserveMyTrip</h3>
-            <p class="text-sm text-gray-600">
-              Book cheap flights with ease on our site or app. As one of India’s top travel platforms, we help thousands daily with affordable air tickets and 24/7 customer support for a stress-free journey.
-            </p>
-          </div>
-    
-          <!-- Block 3 -->
-          <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
-            <h3 class="font-semibold text-lg mb-2 text-gray-800">Lowest Fares Guaranteed</h3>
-            <p class="text-sm text-gray-600">
-              Enjoy India’s best flight deals with instant fare drop alerts, flexible rebooking, and price comparisons. ReserveMyTrip ensures top value, fast refunds, and a smooth booking experience every time.
-            </p>
-          </div>
-    
-        </div>
-      </div>
     </section>
-    
-
-
-    <!-- Contact / Inquiry Section -->
-    <section class="py-16 bg-gray-50" id="contact">
-      <div class="max-w-[800px] mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
-          Let’s <span class="text-blue-600">Plan Your Trip</span>
-        </h2>
-
-        <div class="bg-white shadow-md rounded-lg p-8 space-y-6">
-          <!-- Form Fields -->
-          <form class="space-y-4" action="https://formsubmit.co/sameer4uofficial@gmail.com" method="POST">
-             <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
-  <input type="hidden" name="_captcha" value="false" />
-            <div>
-              <label class="block text-sm font-semibold mb-1 text-gray-700"
-                >Full Name</label
-              >
-              <input
-                type="text"
-                placeholder="John Doe"
-                name="name"
-                required
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-              />
-            </div>
-
-            <div>
-              <label class="block text-sm font-semibold mb-1 text-gray-700"
-                >Email Address</label
-              >
-              <input
-                type="email"
-                placeholder="you@example.com"
-                name="email"
-                required
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-              />
-            </div>
-
-            <div>
-              <label class="block text-sm font-semibold mb-1 text-gray-700"
-                >Message</label
-              >
-              <textarea
-                rows="4"
-                placeholder="Tell us about your trip idea..."
-                name="message"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                required
-              ></textarea>
-            </div>
-
-            <!-- Submit + WhatsApp -->
-            <!-- All Buttons in One Row -->
-<div class="flex flex-wrap items-center justify-center gap-4 pt-4">
-  <!-- Send Inquiry -->
-  <button
-    type="submit"
-    class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 text-sm font-semibold shadow"
-  >
-    Send Inquiry
-  </button>
-
-  <!-- WhatsApp -->
-  <a
-    href="https://wa.me/917790909989"
-    target="_blank"
-    class="flex items-center gap-2 text-white bg-green-600 hover:bg-green-700 px-5 py-2 rounded text-sm font-medium shadow"
-  >
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32">
-      <path
-        d="M16 2.5A13.43 13.43 0 002.5 16a13.3 13.3 0 001.8 6.6L2 30l7.6-2a13.5 13.5 0 006.4 1.6A13.5 13.5 0 0016 2.5zm0 24.9a11.1 11.1 0 01-5.6-1.5l-.4-.2-4.5 1.2 1.2-4.4-.2-.4A11.07 11.07 0 1116 27.4zm6-8c-.3-.2-1.7-.8-1.9-.9s-.4-.1-.6.2-.7.9-.9 1.1-.3.2-.6.1a9.1 9.1 0 01-2.7-1.7 9.8 9.8 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5c.1-.2.2-.4.3-.6s0-.4 0-.6a3.6 3.6 0 00-.8-1.2c-.2-.2-.4-.3-.6-.3H12a1.1 1.1 0 00-.8.4c-.3.3-1.1 1-1.1 2.5s1.2 2.9 1.4 3.1a13.9 13.9 0 005.8 4c.8.3 1.5.5 2 .6.9.1 1.7.1 2.3.1.7 0 2.2-.8 2.4-1.6s.3-1.5.2-1.6c-.1-.1-.3-.2-.6-.3z"
-      />
-    </svg>
-    Chat on WhatsApp
-  </a>
-
-  <!-- Urgent Callback -->
-  <a
-    href="tel:+917790909989"
-    class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 text-sm font-semibold shadow inline-block"
-  >
-    Urgent Callback
-  </a>
-</div>
-
-
-          </form>
-        </div>  
-    </section>
-
-    <!-- Blog Section -->
-<section id="blog" class="py-16 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-4">Blog & Travel Tips</h2>
-    <p class="text-gray-600 mb-10 max-w-2xl mx-auto">
-      Get the best travel advice, packing tips, destination guides, and hacks to make your journey unforgettable.
-    </p>
-
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Blog Card 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-        <img src="https://images.pexels.com/photos/7365327/pexels-photo-7365327.jpeg?_gl=1*1gkdb3g*_ga*MTg0MjAxNDI5Ni4xNzUyNTIwMjIz*_ga_8JE65Q40S6*czE3NTI1MjAyMjMkbzEkZzEkdDE3NTI1MjAyNDQkajM5JGwwJGgw" alt="How to Pack Smart" class="w-full h-48 object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">How to Pack Smart for Any Trip</h3>
-          <p class="text-gray-600 text-sm mb-4">Master the art of minimalist travel without missing essentials.</p>
-          <a href="https://www.google.com/" class="text-green-600 hover:underline font-medium">Read more →</a>
-        </div>
-      </div>
-
-      <!-- Blog Card 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-        <img src="https://images.unsplash.com/photo-1605274280779-a4732e176f4b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Solo Travel Tips" class="w-full h-48 object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Top 10 Solo Travel Safety Tips</h3>
-          <p class="text-gray-600 text-sm mb-4">Explore freely and confidently with these solo travel safety tricks.</p>
-          <a href="#" class="text-green-600 hover:underline font-medium">Read more →</a>
-        </div>
-      </div>
-
-      <!-- Blog Card 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-        <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Best Destinations 2025" class="w-full h-48 object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Top Destinations to Visit in 2025</h3>
-          <p class="text-gray-600 text-sm mb-4">These trending locations will inspire your next vacation.</p>
-          <a href="#" class="text-green-600 hover:underline font-medium">Read more →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-   <!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 py-10" id="footer">
-  <div class="max-w-[1200px] mx-auto px-4 grid md:grid-cols-3 gap-8">
-    <!-- Brand & About -->
-    <div>
-      <h3 class="text-2xl font-bold text-white mb-3">
-        Reserve<span class="text-blue-500">MyTrip</span>
-      </h3>
-      <p class="text-sm">
-        Trusted travel partner for domestic and international tours. Personalized service. Transparent pricing. 24/7 support.
-      </p>
-      <!-- Social Media Icons -->
-      <div class="flex space-x-4">
-        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
-    </div>
-    </div>
-
-    <!-- Quick Links -->
-    <div>
-      <h4 class="text-white font-semibold mb-3">Quick Links</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#" class="hover:text-white">Home</a></li>
-        <li><a href="#packages" class="hover:text-white">Tour Packages</a></li>
-        <li><a href="#about" class="hover:text-white">About</a></li>
-        <li><a href="#contact" class="hover:text-white">Contact</a></li>
-        <li><a href="https://wa.me/917790909989" class="hover:text-white">WhatsApp</a></li>
-      </ul>
-    </div>
-
-    <!-- Legal & Contact -->
-    <div>
-      <h4 class="text-white font-semibold mb-3">Legal & Support</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a href="pages/privacy-policy.html" class="hover:text-white">Privacy Policy</a></li>
-        <!-- <li><a href="#" class="hover:text-white">Terms & Conditions</a></li> -->
-        <li><a href="pages/cancellation-refund.html" class="hover:text-white">Cancellation & Refund</a></li>
-        <li><a href="mailto:support@reservemytrip.in" class="hover:text-white">support@reservemytrip.in</a></li>
-      </ul>
-
-      <!-- Basic Contact Info -->
-      <div class="text-sm text-gray-400 mt-6 space-y-1">
-        <p>📍 Jaipur, Rajasthan, India</p>
-        <p>📧 support@reservemytrip.in</p>
-        <p>🚨 Emergency: shubham@reservemytrip.in</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-center text-xs text-gray-500 mt-10">
-    © 2025 Reservemytrip · A Unit of Mayank Enterprises · All rights reserved.
-  </div>
-</footer>
-<!-- WhatsApp Floating Button -->
-<div class="fixed bottom-5 right-5 z-50 group">
-  <a
-    href="https://wa.me/917790909989"
-    target="_blank"
-    class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition"
-    aria-label="Chat on WhatsApp"
-  >
-    <!-- WhatsApp Icon SVG -->
-    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 2.5A13.43 13.43 0 002.5 16a13.3 13.3 0 001.8 6.6L2 30l7.6-2a13.5 13.5 0 006.4 1.6A13.5 13.5 0 0016 2.5zm0 24.9a11.1 11.1 0 01-5.6-1.5l-.4-.2-4.5 1.2 1.2-4.4-.2-.4A11.07 11.07 0 1116 27.4zm6-8c-.3-.2-1.7-.8-1.9-.9s-.4-.1-.6.2-.7.9-.9 1.1-.3.2-.6.1a9.1 9.1 0 01-2.7-1.7 9.8 9.8 0 01-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5c.1-.2.2-.4.3-.6s0-.4 0-.6a3.6 3.6 0 00-.8-1.2c-.2-.2-.4-.3-.6-.3H12a1.1 1.1 0 00-.8.4c-.3.3-1.1 1-1.1 2.5s1.2 2.9 1.4 3.1a13.9 13.9 0 005.8 4c.8.3 1.5.5 2 .6.9.1 1.7.1 2.3.1.7 0 2.2-.8 2.4-1.6s.3-1.5.2-1.6c-.1-.1-.3-.2-.6-.3z" />
-    </svg>
-  </a>
-
-  <!-- Tooltip -->
-  <div class="absolute right-14 top-1/2 -translate-y-1/2 bg-black text-white text-sm px-3 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-    Chat with us
-  </div>
-</div>
-
-
-
-
-    <script src="js/main.js"></script>
-  </body>
-</html>
